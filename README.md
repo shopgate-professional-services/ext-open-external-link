@@ -1,13 +1,35 @@
 # Shopgate Connect - Extension Boilerplate
 
-This boilerplate contains all important folders and files which are required for an extension.
+Extension that will take passed parameters to create a link that uses App Command - openPageExtern
 
-## Steps to start with the boilerplate
+## About Widget Configuration
+The widget can display either a link in text or a image link. There are additional optional configuration for the styling of either the image or text link.
 
-- Replace the `id` property in the file `extension-config.json` with the id of your extension
-- Replace the `version` property in the file `extension-config.json` with version of your wish
-- If you don't need a pipeline, remove the `awesomeOrganization.awesomePipeline.v1.json` in the `pipelines` folder
-- If you want to use a pipelines, modify the `awesomeOrganization.awesomePipeline.v1.json` in the `pipelines` folder and rename it to the new name 
+- `link`: the url to be opened in an external browser
+####Use one of the following two configurations.
+- `imgSource`: the source url for your image link
+- `linkText`: the text to display for your text link
+####The following configurations are optional
+- `imageHeight`: the specified height for your image
+- `imageWidth`: the specified width for you image
+- `fontSize`: the specified fontSize for your text
+
+## Example Widget Configuration
+```
+<!--Widget
+{
+  "type": "@shopgate-project/open-external-link/externalLink",
+  "settings": {
+	"imgSource": "http://data.shopgate.com/shop_widget_images/24797/3692ec7a133d85701f713e624ceb4d51.min.jpeg",
+	"imageHeight": "200px",
+	"imageWidth": "200px",
+	"linkText": "bumbiePup",
+	"fontSize": "50px",
+	"link": "https://verifypass.com/auth/mil/f5d054edd"
+  }
+}
+-->
+```
 
 ## About Shopgate
 

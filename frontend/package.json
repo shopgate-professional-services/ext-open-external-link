@@ -1,0 +1,36 @@
+{
+  "name": "@shopgate-project/open-external-link",
+  "version": "1.0.0",
+  "description": "Extension that will take passed parameters to create a link that uses App Command - openPageExtern",
+  "license": "Apache-2.0",
+  "scripts": {},
+  "devDependencies": {
+    "@shopgate/eslint-config": "^6.6.0",
+    "@shopgate/pwa-common": "^6.6.0",
+    "@shopgate/pwa-common-commerce": "^6.6.0",
+    "@shopgate/pwa-core": "^6.6.0",
+    "@shopgate/pwa-unit-test": "^6.6.0",
+    "@shopgate/engage": "^6.6.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-inline-elements": "^6.22.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.19.1",
+    "glamor": "^2.20.40",
+    "prop-types": "^15.6.0",
+    "react": "~16.8.4",
+    "react-dom": "~16.8.4",
+    "react-helmet": "^5.2.0",
+    "react-transition-group": "^2.2.1",
+    "react-hot-loader": "4.0.1",
+    "react-transform-catch-errors": "^1.0.2"
+  },
+  "peerDependencies": {
+    "@shopgate/engage": "^6.6.0"
+  }
+}
