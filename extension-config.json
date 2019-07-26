@@ -3,7 +3,7 @@
   "id": "@shopgate-project/open-external-link",
   "components": [
     {
-      "id": "externalLink",
+      "id": "ExternalLink",
       "path": "frontend/widgets/ExternalLink/index.jsx",
       "type": "widgets",
       "descriptin": "Custom widget for opening an external link"

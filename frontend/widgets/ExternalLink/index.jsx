@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import connect from './connector';
+import { openPageExtern } from '@shopgate/engage/core';
 import styles from './style';
 
 /**
  * @returns {JSX}
  */
-const ExternalLink = ({ settings, openPageExtern }) => {
+const ExternalLink = ({ settings }) => {
   const {
     imgSource, linkText, link, imageHeight, imageWidth, fontSize,
-  } = settings || null;
+  } = settings || {};
   if (!link) {
     return null;
   }
-
+  let imageLink;
+  let textLink;
   /**
    * Opens external page
    */
@@ -21,16 +22,19 @@ const ExternalLink = ({ settings, openPageExtern }) => {
     openPageExtern({ src: link });
   };
 
-  const imageLink = (
-    <button onClick={handleClick}>
-      <img className={styles.image(imageHeight, imageWidth)} alt="Configurabale" src={imgSource} />
-    </button>);
-
-  const textLink = (
-    <button className={styles.text(fontSize)} onClick={handleClick}>
-      {linkText}
-    </button>
-  );
+  if (imgSource) {
+    imageLink = (
+      <button onClick={handleClick}>
+        <img className={styles.image(imageHeight, imageWidth)} alt="Configurable" src={imgSource} />
+      </button>);
+  }
+  if (textLink) {
+    textLink = (
+      <button className={styles.text(fontSize)} onClick={handleClick}>
+        {linkText}
+      </button>
+    );
+  }
 
   return (
     <div className={styles.wrapper}>
@@ -40,7 +44,6 @@ const ExternalLink = ({ settings, openPageExtern }) => {
 };
 
 ExternalLink.propTypes = {
-  openPageExtern: PropTypes.func.isRequired,
   settings: PropTypes.shape(),
 };
 
@@ -48,4 +51,4 @@ ExternalLink.defaultProps = {
   settings: {},
 };
 
-export default connect(ExternalLink);
+export default ExternalLink;
