@@ -6,7 +6,7 @@
       "id": "ExternalLink",
       "path": "frontend/widgets/ExternalLink/index.jsx",
       "type": "widgets",
-      "descriptin": "Custom widget for opening an external link"
+      "description": "Custom widget for opening an external link"
     }
   ],
   "configuration": {}
