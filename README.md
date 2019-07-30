@@ -18,7 +18,7 @@ The widget can display either a link in text or a image link. There are addition
 ```
 <!--Widget
 {
-  "type": "@shopgate-project/open-external-link/externalLink",
+  "type": "@shopgate-project/open-external-link/ExternalLink",
   "settings": {
 	"imgSource": "http://data.shopgate.com/shop_widget_images/24797/3692ec7a133d85701f713e624ceb4d51.min.jpeg",
 	"imageHeight": "200px",
