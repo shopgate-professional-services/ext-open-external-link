@@ -1,6 +1,6 @@
 {
   "name": "@shopgate-project/open-external-link",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extension that will take passed parameters to create a link that uses App Command - openPageExtern",
   "license": "Apache-2.0",
   "scripts": {},
@@ -29,8 +29,5 @@
     "react-transition-group": "^2.2.1",
     "react-hot-loader": "4.0.1",
     "react-transform-catch-errors": "^1.0.2"
-  },
-  "peerDependencies": {
-    "@shopgate/engage": "^6.6.0"
   }
 }
